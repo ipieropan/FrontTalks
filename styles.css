@@ -1,16 +1,26 @@
 /* General Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-body {
-    background-color: #f5f9ff;
-    color: #333;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Arial", sans-serif;
 }
 
 
+body,
+html {
+	background-color: #f5f9ff;
+	color: #333;
+	height: 100%;
+	margin: 0;
+}
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the wrapper takes up the full height */
+}
 
+main {
+    flex: 1;
+}
