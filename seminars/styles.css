@@ -24,7 +24,7 @@ html {
     flex: 1; 
 }
 
-.cyberContainer{
+.seminarContainer{
     width: 80%;
     margin: auto;
     padding: 20px;
@@ -32,7 +32,7 @@ html {
     box-shadow: 0px 0px 10px #0000001a;
 }
 
-.cyberContainer p {
+.seminarContainer p {
 	line-height: 1.6;
 	color: #666;
 }
@@ -59,8 +59,9 @@ html {
 	color: #1a73e8;
 }
 
-.cyberContainer h2{
+.seminarContainer h2{
     color: #1a73e8;
+	margin-top: 10px;
 }
 
 .date h2{
