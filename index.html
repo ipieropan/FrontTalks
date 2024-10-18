@@ -64,9 +64,13 @@
 								<input type="text" placeholder="Enter Your Email.." />
 								<input type="password" placeholder="Enter Your Password.." />
 								<input type="text" placeholder="Adress" />
+								<label for="dayPass">Choose your pass:</label>
+									<input type="checkbox" name="firstDay" id="firstDay">18/10/2024
+									<input type="checkbox" name="secondDay" id="secondDay">19/10/2024
+									<input type="checkbox" name="thirdDay" id="thirdDay">20/10/2024
 								<div class="dayPass">
-									<label for="dayPass">Choose your pass:</label>
-									<select name="dayPass" id="dayPass" required>
+									
+									<!-- <select name="dayPass" id="dayPass" required>
 										<option value="" disabled selected>
 											Select your option
 										</option>
@@ -74,7 +78,7 @@
 										<option value="React">React</option>
 										<option value="Responsive Design">Responsive Design</option>
 										<option value="3 days">All the seminars</option>
-									</select>
+									</select> -->
 									<!-- calendar to define dates (still dont know how to use without js)-->
 									<!-- <input type="date" name="" id="" minlength="18/10/2024" maxlength="20/10/2024"> -->
 								</div>
@@ -88,6 +92,8 @@
 										<option value="meat">Meat</option>
 										<option value="veggie">Veggie</option>
 									</select>
+									<label for="allergies">Allergies</label>
+									<input type="text">
 								</div>
 
 								<input type="submit" value="Register" />
