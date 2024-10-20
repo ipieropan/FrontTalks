@@ -4,29 +4,20 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="styles.css" />
-		<link rel="stylesheet" href="/components/header/header.css" />
 		<link rel="stylesheet" href="/components/footer/footer.css" />
-		<title>FrontTalks</title>
+		<link rel="stylesheet" href="/components/header/header.css" />
+		<title>FrontTalks - Seminar Registration</title>
 	</head>
 	<body>
 		<div class="wrapper">
 			<header>
 				<div class="container">
 					<nav>
-						<h1>FrontTalks 2024!</h1>
+						<h1>Better Web!</h1>
 						<ul>
-							<li>
-								<a href="index.html">Home</a>
-							</li>
-							<li>
-								<a href="/seminars/cyberSecurity.html">Cyber Security</a>
-							</li>
-							<li>
-								<a href="/seminars/react.html">React</a>
-							</li>
-							<li>
-								<a href="/seminars/responsiveDesign.html">Responsive design</a>
-							</li>
+							<li><a href="/seminars/seminars.html">Seminars</a></li>
+							<li><a href="index.html">Register</a></li>
+							
 						</ul>
 					</nav>
 				</div>
@@ -35,61 +26,55 @@
 			<main class="m-container">
 				<div class="wrapperReg">
 					<div class="seminar-info">
-						<h2>About Us</h2>
+						<h2>Seminar Registration</h2>
 						<p>
-							FrontTalks 2024 brings together experts in front-end development
-							for three days of learning and networking. Topics include
-							responsive design, React development, and cybersecurity best
-							practices for modern web applications. Each session is designed to
-							deepen your skills, with practical insights from industry leaders.
+							Please fill out the form below to register for the seminars. Choose
+							your preferred days and meals!
 						</p>
-						<p>Click in register to buy what days you want to be with us with food included.</p>
 					</div>
 
-					<div class="btn-area">
-						<label for="chkBox">Register</label>
-					</div>
-				</div>
+					<div class="login-form">
+						<input type="text" placeholder="Enter Your Email.." required />
+						<input
+							type="password"
+							placeholder="Enter Your Password.."
+							required
+						/>
+						<input type="text" placeholder="Address" />
 
-				<input type="checkbox" name="" id="chkBox" />
-				<div class="mainContent">
-					<div class="box">
-						<div class="boxes bx1"></div>
-						<div class="boxes bx2">
-							<h3>Register to seminar</h3>
-							<div class="login-form">
-								<input type="text" placeholder="Enter Your Email.." />
-								<input type="password" placeholder="Enter Your Password.." />
-								<input type="text" placeholder="Adress">
-								<div class="dayPass">
-									<label for="dayPass">Choose your pass:</label>
-									<select name="dayPass" id="dayPass" required>
-										<option value="" disabled selected>
-											Select your option
-										</option>
-										<option value="1 day">1 day</option>
-										<option value="2 days">2 days</option>
-										<option value="3 days">3 days</option>
-									</select>
-								</div>
-								<div class="food">
-									<label for="meal">Choose a meal:</label>
-									<select name="meal" id="meal" required>
-										<option value="" disabled selected>
-											Select your option
-										</option>
-										<option value="fish">Fish</option>
-										<option value="meat">Meat</option>
-										<option value="veggie">Veggie</option>
-									</select>
-								</div>
-
-								<input type="submit" value="submit" />
+						<div class="dayPass">
+							<label for="dayPass">Choose your pass:</label>
+							<div>
+								<input type="checkbox" id="firstDay" value="18/10/2024" />
+								<label for="firstDay">18/10/2024</label>
 							</div>
-							<div class="close-box">
-								<label for="chkBox" class="box-close">X</label>
+							<div>
+								<input type="checkbox" id="secondDay" value="19/10/2024" />
+								<label for="secondDay">19/10/2024</label>
+							</div>
+							<div>
+								<input type="checkbox" id="thirdDay" value="20/10/2024" />
+								<label for="thirdDay">20/10/2024</label>
 							</div>
 						</div>
+
+						<div class="food">
+							<label for="meal">Choose a meal:</label>
+							<select name="meal" id="meal" required>
+								<option value="" disabled selected>Select your option</option>
+								<option value="fish">Fish</option>
+								<option value="meat">Meat</option>
+								<option value="veggie">Veggie</option>
+							</select>
+							<label for="allergies">Allergies</label>
+							<input
+								type="text"
+								id="allergies"
+								placeholder="Enter any allergies"
+							/>
+						</div>
+
+						<input type="submit" value="Register" />
 					</div>
 				</div>
 			</main>
