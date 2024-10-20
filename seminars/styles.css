@@ -1,16 +1,16 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
 }
 
 body,
 html {
-	background-color: #f5f9ff;
-	color: #333;
-	height: 100%;
-	margin: 0;
+    background-color: #f5f9ff;
+    color: #333;
+    height: 100%;
+    margin: 0;
     padding: 0;
 }
 
@@ -25,119 +25,92 @@ html {
 }
 
 
-/* new design */
-.box{
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	width: 100%;
-	height: 85vh;
-}
-
-.box1 {
-	background-image: url(https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-
-.box1 img{
-	border-radius: 50%;
-	width: 150px;
-	height: 150px;
-	object-fit: cover;
-}
-
-.box1 h1{
-	margin-top: 50px;
-	font-style: italic;
-	font-size: 60px;
-	color: #fbff03;
-	text-align: center;
-}
-.box1 h2{
-	text-align: center;
-	color: #fbff03;
-}
-
-
-.box2 {
-	padding: 40px 32px 20px 32px;
-}
-
-.introduction{
-	border-radius: 5px;
-	background-color: #fff;
-	text-align: justify;
-	padding: 10px;
-	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-	
-}
-
-.introduction h1{
-	text-align: center;
-	margin-bottom: 10px;
-	color: #1a73e8;
-}
-
-.keyAspects{
-	margin-top: 10px;
-	border-radius: 5px;
-	background-color: #fff;
-	text-align: justify;
-	padding: 10px;
-	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-.keyAspects h2{
-	margin-bottom: 10px;
-	text-align: center;
-	color: #1a73e8;
-}
-.keyAspects ul{
-	list-style-type: none;
-}
-/* new design  ^ */
-
-
-.seminarContainer{
+/* Seminar Container */
+.seminarContainer {
     width: 80%;
-    margin: auto;
+    margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0px 0px 10px #0000001a;
+    border-radius: 8px;
+}
+
+.seminarContainer h2 {
+    color: #1a73e8;
+    margin-bottom: 10px;
 }
 
 .seminarContainer p {
-	line-height: 1.6;
-	color: #666;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
 }
 
+/* Team Section */
 .team {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
 .team-member {
-	margin: 20px;
-	text-align: center;
+    margin: 20px;
+    text-align: center;
+    flex: 1 1 150px;
 }
 
 .team-member img {
-	border-radius: 50%;
-	width: 150px;
-	height: 150px;
-	object-fit: cover;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
 .team-member h3 {
-	color: #1a73e8;
+    color: #1a73e8;
+    margin-bottom: 5px;
 }
 
-.seminarContainer h2{
-    color: #1a73e8;
-	margin-top: 10px;
+.team-member p {
+    color: #666;
 }
 
-.date h2{
-    color: #1a73e8;
+/* Date Section */
+.date {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.date p {
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seminarContainer {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 769px) {
+    .seminarContainer {
+        width: 80%;
+        margin: 30px auto;
+        padding: 25px;
+    }
 }
