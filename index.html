@@ -4,8 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="../components/header/header.css" />
 		<link rel="stylesheet" href="/components/footer/footer.css" />
-		<link rel="stylesheet" href="/components/header/header.css" />
 		<title>FrontTalks - Seminar Registration</title>
 	</head>
 	<body>
@@ -15,9 +15,8 @@
 					<nav>
 						<h1>Better Web!</h1>
 						<ul>
-							<li><a href="../seminars/seminars.html">Seminars</a></li>
+							<li><a href="/seminars/seminars.html">Seminars</a></li>
 							<li><a href="index.html">Register</a></li>
-							
 						</ul>
 					</nav>
 				</div>
@@ -28,53 +27,55 @@
 					<div class="seminar-info">
 						<h2>Seminar Registration</h2>
 						<p>
-							Please fill out the form below to register for the seminars. Choose
-							your preferred days and meals!
+							Please fill out the form below to register for the seminars.
+							Choose your preferred days and meals!
 						</p>
 					</div>
 
 					<div class="login-form">
-						<input type="text" placeholder="Enter Your Email.." required />
-						<input
-							type="password"
-							placeholder="Enter Your Password.."
-							required
-						/>
-						<input type="text" placeholder="Address" />
-
-						<div class="dayPass">
-							<label for="dayPass">Choose your pass:</label>
-							<div>
-								<input type="checkbox" id="firstDay" value="18/10/2024" />
-								<label for="firstDay">18/10/2024</label>
-							</div>
-							<div>
-								<input type="checkbox" id="secondDay" value="19/10/2024" />
-								<label for="secondDay">19/10/2024</label>
-							</div>
-							<div>
-								<input type="checkbox" id="thirdDay" value="20/10/2024" />
-								<label for="thirdDay">20/10/2024</label>
-							</div>
-						</div>
-
-						<div class="food">
-							<label for="meal">Choose a meal:</label>
-							<select name="meal" id="meal" required>
-								<option value="" disabled selected>Select your option</option>
-								<option value="fish">Fish</option>
-								<option value="meat">Meat</option>
-								<option value="veggie">Veggie</option>
-							</select>
-							<label for="allergies">Allergies</label>
+						<form action="">
+							<input type="text" placeholder="Enter Your Email.." required />
 							<input
-								type="text"
-								id="allergies"
-								placeholder="Enter any allergies"
+								type="password"
+								placeholder="Enter Your Password.."
+								required
 							/>
-						</div>
+							<input type="text" placeholder="Address" />
 
-						<input type="submit" value="Register" />
+							<div class="dayPass">
+								<label for="dayPass">Choose your pass:</label>
+								<div>
+									<input type="checkbox" id="firstDay" value="18/10/2024" />
+									<label for="firstDay">2024-10-18</label>
+								</div>
+								<div>
+									<input type="checkbox" id="secondDay" value="19/10/2024" />
+									<label for="secondDay">2024-10-19</label>
+								</div>
+								<div>
+									<input type="checkbox" id="thirdDay" value="20/10/2024" />
+									<label for="thirdDay">2024-10-20</label>
+								</div>
+							</div>
+
+							<div class="food">
+								<label for="meal">Choose a meal:</label>
+								<select name="meal" id="meal" required>
+									<option value="" disabled selected>Select your option</option>
+									<option value="fish">Fish</option>
+									<option value="meat">Meat</option>
+									<option value="veggie">Veggie</option>
+								</select>
+								<label for="allergies">Allergies</label>
+								<input
+									type="text"
+									id="allergies"
+									placeholder="Enter any allergies"
+								/>
+							</div>
+
+							<input type="submit" value="Register" />
+						</form>
 					</div>
 				</div>
 			</main>
