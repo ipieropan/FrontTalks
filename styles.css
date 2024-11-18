@@ -64,7 +64,7 @@ html {
 	height: 16px;
 	transform: scale(0.8);
 	margin-right: 5px;
-    margin: 0; /* Remove default margins */
+    margin: 0;
 	vertical-align: middle;
 }
 
@@ -82,8 +82,8 @@ html {
 
 .dayPass div {
 	display: flex;
-	align-items: center; /* Vertically center align checkbox and text */
-	gap: 8px; /* Add spacing between checkbox and text */
+	align-items: center; 
+	gap: 8px; 
 	margin-bottom: 10px;
 }
 
